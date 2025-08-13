@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Text Formatting Tags Demo</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding-top: 70px; 
+        }
+
+      
+        .assignment-nav {
+            background-color: white;
+            width: 100%;
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-brand a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-brand a:hover {
+            color: #45a049;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            background: #4CAF50; 
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .nav-link.active {
+            background: #4CAF50; 
+            color: white;
+            border-color: #45a049;
+        }
+
+       
+        .container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #e8f5e8;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #e8f5e8; 
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        mark {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            color: #666;
+        }
+
+        .tag-name {
+            background-color: #e8f5e8;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+    </style>
+    </head>
+    <body>
+
+        <nav class="assignment-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="../index.html">🏠 CDAC HTML Assignment</a>
+                </div>
+                <div class="nav-links">
+                    <a href="../question_1/question1.html"
+                        class="nav-link active"
+                        data-page="1">Q1: Text Formatting</a>
+                    <a href="../question_2/index.html" class="nav-link"
+                        data-page="2">Q2:
+                        Resume</a>
+                    <a href="../question_3/page1.html" class="nav-link"
+                        data-page="3">Q3:
+                        Image Links</a>
+                    <a href="../question_4/question4.html" class="nav-link"
+                        data-page="4">Q4:
+                        Products</a>
+                    <a href="../questionn_5/index.html" class="nav-link"
+                        data-page="5">Q5:
+                        Tables</a>
+                    <a href="../question_6/question6.html" class="nav-link"
+                        data-page="6">Q6:
+                        Forms</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="header-section">
+                <h1>HTML Text Formatting Tags Demonstration</h1>
+                <p><strong>Complete Reference:</strong> <em>All HTML Text
+                        Formatting Elements</em></p>
+            </div>
+
+            <h2>&nbsp;&nbsp; HTML Text Formatting Tags Reference</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag Name</th>
+                        <th>HTML Code</th>
+                        <th>Result</th>
+                        <th>Description</th>
+                        <th>Common Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag-name">&lt;b&gt;</td>
+                        <td><code>&lt;b&gt;Bold Text&lt;/b&gt;</code></td>
+                        <td><b>Bold Text</b></td>
+                        <td>Makes text bold</td>
+                        <td>Emphasis, headings</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;strong&gt;</td>
+                        <td><code>&lt;strong&gt;Important&lt;/strong&gt;</code></td>
+                        <td><strong>Important</strong></td>
+                        <td>Semantically important text</td>
+                        <td>Important content</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;i&gt;</td>
+                        <td><code>&lt;i&gt;Italic Text&lt;/i&gt;</code></td>
+                        <td><i>Italic Text</i></td>
+                        <td>Makes text italic</td>
+                        <td>Style, foreign words</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;em&gt;</td>
+                        <td><code>&lt;em&gt;Emphasized&lt;/em&gt;</code></td>
+                        <td><em>Emphasized</em></td>
+                        <td>Semantically emphasized text</td>
+                        <td>Stress, emphasis</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;u&gt;</td>
+                        <td><code>&lt;u&gt;Underlined&lt;/u&gt;</code></td>
+                        <td><u>Underlined</u></td>
+                        <td>Underlines text</td>
+                        <td>Annotations, proper names</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;mark&gt;</td>
+                        <td><code>&lt;mark&gt;Highlighted&lt;/mark&gt;</code></td>
+                        <td><mark>Highlighted</mark></td>
+                        <td>Highlights text</td>
+                        <td>Search results, important info</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;small&gt;</td>
+                        <td><code>&lt;small&gt;Small
+                                Text&lt;/small&gt;</code></td>
+                        <td><small>Small Text</small></td>
+                        <td>Makes text smaller</td>
+                        <td>Fine print, disclaimers</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;del&gt;</td>
+                        <td><code>&lt;del&gt;Deleted&lt;/del&gt;</code></td>
+                        <td><del>Deleted</del></td>
+                        <td>Shows deleted text</td>
+                        <td>Document revisions</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;ins&gt;</td>
+                        <td><code>&lt;ins&gt;Inserted&lt;/ins&gt;</code></td>
+                        <td><ins>Inserted</ins></td>
+                        <td>Shows inserted text</td>
+                        <td>Document additions</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;sub&gt;</td>
+                        <td><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></td>
+                        <td>H<sub>2</sub>O</td>
+                        <td>Subscript text</td>
+                        <td>Chemical formulas, math</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;sup&gt;</td>
+                        <td><code>X&lt;sup&gt;2&lt;/sup&gt;</code></td>
+                        <td>X<sup>2</sup></td>
+                        <td>Superscript text</td>
+                        <td>Exponents, footnotes</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;code&gt;</td>
+                        <td><code>&lt;code&gt;console.log()&lt;/code&gt;</code></td>
+                        <td><code>console.log()</code></td>
+                        <td>Inline code</td>
+                        <td>Programming code</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;var&gt;</td>
+                        <td><code>&lt;var&gt;x&lt;/var&gt; = 5</code></td>
+                        <td><var>x</var> = 5</td>
+                        <td>Variables</td>
+                        <td>Mathematical variables</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;cite&gt;</td>
+                        <td><code>&lt;cite&gt;Book
+                                Title&lt;/cite&gt;</code></td>
+                        <td><cite>Book Title</cite></td>
+                        <td>Citations</td>
+                        <td>References, titles</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;dfn&gt;</td>
+                        <td><code>&lt;dfn&gt;HTML&lt;/dfn&gt;</code></td>
+                        <td><dfn>HTML</dfn></td>
+                        <td>Definitions</td>
+                        <td>Term definitions</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;abbr&gt;</td>
+                        <td><code>&lt;abbr
+                                title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code></td>
+                        <td><abbr title="World Wide Web">WWW</abbr></td>
+                        <td>Abbreviations</td>
+                        <td>Shortened forms</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;time&gt;</td>
+                        <td><code>&lt;time datetime="2025-08-13"&gt;Aug
+                                13&lt;/time&gt;</code></td>
+                        <td><time datetime="2025-08-13">Aug 13</time></td>
+                        <td>Time/Date</td>
+                        <td>Dates, times</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <footer>
+                <hr>
+                <p><small>&copy; 2025 HTML Text Formatting Page <i>Made by
+                            Sameer</i></small></p>
+            </footer>
+        </div>
+    </body>
+</html>

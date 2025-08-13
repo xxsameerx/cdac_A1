@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question 6 - Customer Form</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+    </style>
+    </head>
+    <body>
+        <nav class="assignment-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="../index.html">🏠 CDAC HTML Assignment</a>
+                </div>
+                <div class="nav-links">
+                    <a href="../question_1/question1.html"
+                        class="nav-link">Q1: Text Formatting</a>
+                    <a href="../question_2/index.html" class="nav-link">Q2:
+                        Resume</a>
+                    <a href="../question_3/page1.html" class="nav-link">Q3:Image
+                        Links</a>
+                    <a href="../question_4/question4.html"
+                        class="nav-link">Q4: Prodcuts Listing</a>
+                    <a href="../questionn_5/index.html" class="nav-link">Q5:
+                        Tables</a>
+                    <a href="../question_6/question6.html"
+                        class="nav-link active">Q6: Forms</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="form-container">
+            <h2>Question 6: Customer Information Form</h2>
+            <hr>
+
+            <fieldset>
+                <legend>Customer Registration Form</legend>
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="txtName">Customer Name:</label></td>
+                            <td><input type="text" name="txtName" id="txtName"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtAddress">Address:</label></td>
+                            <td><textarea name="txtAddress" id="txtAddress"
+                                    rows="4" cols="30"
+                                    placeholder="Enter your full address"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input type="radio" name="rbtnGender"
+                                    value="Male" id="male" checked>
+                                <label for="male">Male</label>
+                                <input type="radio" name="rbtnGender"
+                                    value="Female" id="female">
+                                <label for="female">Female</label>
+                                <input type="radio" name="rbtnGender"
+                                    value="Other" id="other">
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Languages Known:</td>
+                            <td>
+                                <input type="checkbox" name="cboxLanguage"
+                                    value="Hindi" id="hindi" checked>
+                                <label for="hindi">Hindi</label>
+                                <input type="checkbox" name="cboxLanguage"
+                                    value="English" id="english">
+                                <label for="english">English</label><br>
+                                <input type="checkbox" name="cboxLanguage"
+                                    value="Marathi" id="marathi">
+                                <label for="marathi">Marathi</label>
+                                <input type="checkbox" name="cboxLanguage"
+                                    value="Tamil" id="tamil">
+                                <label for="tamil">Tamil</label><br>
+                                <input type="checkbox" name="cboxLanguage"
+                                    value="Telugu" id="telugu">
+                                <label for="telugu">Telugu</label>
+                                <input type="checkbox" name="cboxLanguage"
+                                    value="Bengali" id="bengali">
+                                <label for="bengali">Bengali</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ddlCity">City:</label></td>
+                            <td>
+                                <select name="ddlCity" id="ddlCity">
+                                    <option value="-1">---Select
+                                        City---</option>
+                                    <optgroup label="Bihar">
+                                        <option value="8">Patna</option>
+                                        <option value="9">Gaya</option>
+                                        <option value="10">Bhagalpur</option>
+                                    </optgroup>
+                                    <optgroup label="Maharashtra">
+                                        <option value="1">Mumbai</option>
+                                        <option value="2">Pune</option>
+                                        <option value="3">Nashik</option>
+                                        <option value="4">Nagpur</option>
+                                    </optgroup>
+                                    <optgroup label="Karnataka">
+                                        <option value="5">Bangalore</option>
+                                        <option value="6">Mysore</option>
+                                        <option value="7">Hubli</option>
+                                    </optgroup>
+                                    <optgroup label="Delhi NCR">
+                                        <option value="11">New Delhi</option>
+                                        <option value="12">Gurgaon</option>
+                                        <option value="13">Noida</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtEmail">Email ID:</label></td>
+                            <td><input type="email" name="txtEmail"
+                                    id="txtEmail"
+                                    placeholder="enteryouremail@email.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtPhone">Phone Number:</label></td>
+                            <td><input type="text" name="txtPhone" id="txtPhone"
+                                    placeholder="Enter ur mobile number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Submit Information">
+                                <input type="reset" value="Clear Contents">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

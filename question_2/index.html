@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>MSA Resume</title>
+        <style>
+.assignment-nav {
+    background-color: #4a9eff;
+    width: 100vw;
+    padding: 5px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin-bottom:2rem;
+    margin-left: calc(-50vw + 50%);
+    box-shadow: 0 2px 10px white;
+    
+}
+.assignment-nav:hover{
+    font-size: large;
+}
+
+.nav-container {
+    max-width: 900px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-brand a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    border: 1px solid transparent;
+}
+
+.nav-link:hover {
+    background:white;
+    color: red;
+    transform: translateY(-2px);
+}
+
+
+
+</style>
+
+    </head>
+    <body>
+        <nav class="assignment-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="../index.html">🏠 CDAC HTML Assignment</a>
+                </div>
+                <div class="nav-links">
+                    <a href="../question_1/question1.html" class="nav-link"
+                        data-page="1">Q1:
+                        Text
+                        Formatting</a>
+                    <a href="../question_2/index.html" class="nav-link"
+                        data-page="2">Q2:
+                        Resume</a>
+                    <a href="../question_3/page1.html" class="nav-link"
+                        data-page="3">Q3:
+                        Image
+                        Links</a>
+                    <a href="../question_4/question4.html" class="nav-link"
+                        data-page="4">Q4:
+                        Products</a>
+                    <a href="../questionn_5/index.html" class="nav-link"
+                        data-page="5">Q5:
+                        Tables</a>
+                    <a href="../question_6/question6.html" class="nav-link"
+                        data-page="6">Q6:
+                        Forms</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 10rem;">
+            <header>
+                <div class="profile-section">
+                    <img
+                        src="./image/dp.jpg"
+                        alt="Mohammad Sameer Abbas"
+                        class="profile-photo">
+                    <div class="profile-info">
+                        <h1>Mohammad Sameer Abbas</h1>
+                        <p class="subtitle">Frontend Developer | MERN Stack |
+                            Machine Learning Engineer</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a
+                        href="mailto:mdsameerabbas777@gmail.com">mdsameerabbas777@gmail.com</a>
+                    |
+                    <a
+                        href="https://www.linkedin.com/in/mohammad-sameer-abbas-763802243/">LinkedIn
+                        Profile</a> |
+                    <a href="https://github.com/xxsameerx">GitHub</a> |
+                    Patna, Bihar, India
+                </div>
+            </header>
+
+            <div class="section ">
+                <h2>About Me</h2>
+                <p class="about-me">
+                    Aspiring software engineer with a strong interest in
+                    <strong>full-stack development</strong> and
+                    <strong>machine learning</strong>. Skilled in React.js,
+                    Node.js, MongoDB, Git/GitHub, and Python.
+                    Experienced with NumPy, Pandas, TensorFlow, and building
+                    models for machine learning, deep learning
+                    (CNNs), and NLP. Eager to build innovative solutions and
+                    grow through real-world challenges.
+                </p>
+            </div>
+
+            <div class="section ">
+                <h2>Technical Skills</h2>
+                <div class="skills skills-list">
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React.js</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">MERN Stack</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">TensorFlow</span>
+                    <span class="skill">Deep Learning</span>
+                    <span class="skill">NLP</span>
+                    <span class="skill">Computer Vision</span>
+                    <span class="skill">NumPy</span>
+                    <span class="skill">Pandas</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">ResNet</span>
+                    <span class="skill">EfficientNet</span>
+                    <span class="skill">Transfer Learning</span>
+                    <span class="skill">Gradio</span>
+                    <span class="skill">ReportLab</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projects & Experience</h2>
+                <div class="experience-item">
+                    <div class="job-title">AI-Powered Multiple Disease
+                        Prediction and Report Generation System (Internship
+                        Project)</div>
+                    <div class="job-details">June 2025 - July 2025 (1 month) |
+                        Remote</div>
+                    <p>
+                        Designed and implemented an end-to-end AI diagnostic
+                        tool using deep learning for real-time
+                        image-based disease classification with automatic
+                        medical report generation capabilities.
+                    </p>
+
+                    <div class="project-highlight">
+                        <strong>1. Skin Disease Prediction Model</strong>
+                        <div class="model-details">
+                            <p><strong>Architecture:</strong> ResNet-18
+                                (Pre-trained on ImageNet, fine-tuned)</p>
+                            <p><strong>Dataset:</strong> HAM10000 (10,000+
+                                dermatological images)</p>
+                            <p><strong>Accuracy:</strong> >85% with stable
+                                validation performance</p>
+                            <p><strong>Capabilities:</strong> 7 different skin
+                                disease classifications</p>
+                        </div>
+                    </div>
+
+                    <div class="project-highlight">
+                        <strong>2. Malaria Prediction Model</strong>
+                        <div class="model-details">
+                            <p><strong>Architecture:</strong> EfficientNet-B0
+                                (Transfer Learning)</p>
+                            <p><strong>Dataset:</strong> NIH malaria dataset
+                                (microscope cell images)</p>
+                            <p><strong>Accuracy:</strong> >89% on validation
+                                data</p>
+                            <p><strong>Capabilities:</strong> Infected vs
+                                uninfected cell detection</p>
+                        </div>
+                    </div>
+
+                    <ul type="circle">
+                        <li>Implemented advanced image preprocessing, data
+                            augmentation, and normalization techniques</li>
+                        <li>Integrated Grad-CAM visualizations for explainable
+                            AI and model interpretability</li>
+                        <li>Built interactive Gradio interface with
+                            chatbot-style user experience</li>
+                        <li>Developed automated PDF report generation using
+                            ReportLab with timestamp and custom layout</li>
+                        <li>Applied balanced training using class weights and
+                            comprehensive model evaluation metrics</li>
+                        <li>Deployed complete solution with real-time prediction
+                            capabilities and downloadable reports</li>
+                    </ul>
+
+                    <p>
+                        <strong>Live Demo:</strong>
+                        <a href="https://huggingface.co/spaces/Sameer457/ai"
+                            target="_blank"
+                            class="live-demo-link">
+                            Click here to see the live demo.
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="experience-item">
+                    <div class="job-title">Bachelor of Technology - Computer
+                        Science</div>
+                    <div class="job-details">Maulana Azad College of Engineering
+                        and Technology, Patna | Sep 2022 - Jun 2026</div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Intermediate, Science (PCMB)</div>
+                    <div class="job-details">Oriental College, Patna City | Jun
+                        2019 - Mar 2021</div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Matriculation</div>
+                    <div class="job-details">BD Public School, Patna | Mar 2018
+                        - Mar 2019</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Core Competencies</h2>
+                <table class="table-section">
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Programming Languages</strong></td>
+                        <td>C, Python, JavaScript, HTML, CSS, SQL</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Soft Skills</strong></td>
+                        <td>Problem Solving, Team Collaboration, Project
+                            Management, Quick Learning, Innovation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Areas of Interest</strong></td>
+                        <td>Full-Stack Development, Machine Learning, AI, Open
+                            Source</td>
+                    </tr>
+                </table>
+            </div>
+
+            <footer align="center">
+                <p>
+                    🚀 Open to opportunities in
+                    <strong>Software Development</strong>,
+                    <strong>Machine Learning</strong>, and
+                    <strong>Full-Stack Engineering</strong>
+                </p>
+                <hr>
+                <p>
+                    &copy; 2025 <strong>Mohammad Sameer Abbas</strong>. All
+                    Rights Reserved.
+                </p>
+                <p>
+                    ✨ Made with passion for web development
+                </p>
+            </footer>
+
+        </div>
+    </body>
+</html>

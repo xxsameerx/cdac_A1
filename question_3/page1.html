@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question 3 - Image Links</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding-top: 70px;
+        }
+
+        
+        .assignment-nav {
+            background-color: white;
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-brand a {
+            color: #4a9eff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: #4a9eff;
+            color: white;
+        }
+
+       
+        .container {
+            max-width: 30%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .my-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="assignment-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="../index.html">🏠 CDAC HTML Assignment</a>
+                </div>
+                <div class="nav-links">
+                    <a href="../question_1/question1.html"
+                        class="nav-link">Q1: Text Formatting</a>
+                    <a href="../question_2/index.html" class="nav-link">Q2:
+                        Resume</a>
+                    <a href="../question_3/page1.html"
+                        class="nav-link active">Q3: Image Links</a>
+                    <a href="../question_4/question4.html"
+                        class="nav-link">Q4: Products Listing</a>
+                    <a href="../questionn_5/index.html" class="nav-link">Q5:
+                        Tables</a>
+                    <a href="../question_6/question6.html"
+                        class="nav-link">Q6: Forms</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Question 3: Image Links</h1>
+            <a
+                href="https://www.instagram.com/ig.sameerx?igsh=aW95am90cDFrOXls&utm_source=qr"
+                target="_blank">
+                <img src="../question_2/image/download.jpeg"
+                    alt="My Assignment Work"
+                    class="my-photo">
+            </a>
+
+            <p>This will take you to my Instagram Account</p>
+
+        </div>
+    </body>
+</html>
